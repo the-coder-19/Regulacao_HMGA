@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Atendimento Médico</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="atendimento.css">
+
+</head>
+<body>
+    <main>
+    <div class="container">
+        <div class="cabecalho"><h1>Atendimento Médico</h1></div>
+        <!-- O formulário terá o método POST, que enviará para o banco de dados as informações coletadas -->
+        <form action="#" method="post">
+                <h3 class="dados">Informações do Paciente</h3>
+                <div class="info">
+                    <label for="nome" class="l-n">Nome</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
+                <form action="#" method="post">
+                    <h3 class="dados">Anamnese</h3>
+                    <fieldset>
+                        <textarea name="anamnese" id="textarea" cols="80" rows="10"></textarea>
+                    </fieldset>
+                    <h3 class="dados">Hipotese Diagnóstica</h3>
+                    <fieldset>
+                        <textarea name="diagnostico" id="textarea" cols="80" rows="10"></textarea>
+                    </fieldset>
+                </form>
+                <button>Submeter</button>
+
+    </main>
+</body>
+</html>

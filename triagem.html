@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triagem</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="triagem.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="cabecalho"><h1>Triagem</h1></div>
+            <!-- O formulário terá o método POST, que enviará para o banco de dados as informações coletadas -->
+            <form action="#" method="post">
+                    <h3 class="dados">Informações do Paciente</h3>
+                    <div class="info">
+                        <label for="nome" class="l-n">Nome</label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                <h3 class="titulos">Queixas</h3>
+                <fieldset >
+                    <textarea name="queixas" id="textarea" cols="80" rows="5"></textarea>
+                </fieldset>
+                
+                <fieldset class="taxas">
+                <div class="info">
+                    <div class="hgt dados">
+                        <label for="hgt">HGT</label>
+                        <input type="number" name="number" id="hgt">mm/dl
+                    </div>
+                    <div class="spo2 dados">
+                        <label for="spo2">SPO2</label>
+                        <input type="number" name="number" id="spo2">%
+                    </div>
+                    <div class="pa dados">
+                        <label for="pa">PA</label>
+                        <input type="number" name="number" id="pa">mmHG
+                    </div>
+                    <div class="fc dados">
+                        <label for="fc">FC</label>
+                        <input type="number" name="number" id="fc">bpm
+                    </div>
+                    <div class="tax dados">
+                        <label for="tax">TAX</label>
+                        <input type="number" name="number" id="tax">ºC
+                    </div>
+                    <div class="fr dados">
+                        <label for="fr">FR</label>
+                        <input type="number" name="number" id="fr">IRPM
+                    </div>
+                    <div class="peso dados">
+                        <label for="peso">Peso</label>
+                        <input type="number" name="number" id="hgt">Kg
+                    </div>
+                </div>
+            </fieldset>
+            </form>
+            <button>Submeter</button>
+        </div>
+    </main>
+</body>
+</html>

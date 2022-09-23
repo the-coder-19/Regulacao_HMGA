@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dados do Paciente</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="cabecalho.css">
+    <link rel="stylesheet" href="reset.css">
+
+</head>
+<body>
+    <main>        
+        <div class="container">
+            <!-- Aqui é a introdução da Página, com as informações básicas -->
+            <div class="cabecalho"><h1>Boletim de Atendimento</h1></div>
+            <div class="info">
+                <div class="data">
+                    <label for="data">Data</label>
+                    <input type="datetime-local" name="data" id="data0">
+                </div>
+                <div class="registro">
+                    <label for="registro">Nº de Registro</label>
+                    <input type="number" name="numero" id="registro">
+                </div>
+            </div>
+
+            <!-- O formulário responderá ao método de GET com a API do E-SUS -->
+            <form action="#" method="get">
+                <!-- Essas são as informações mais básicas do paciente -->
+                <h3 class="titulos">Informações do Paciente</h3>
+                <fieldset class="dados">
+                    <div class="nome">
+                        <div class="a-a">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome" id="nome">
+                            <label for="nascimento">Data de nascimento</label>
+                            <input type="date" name="data" id="data">
+                        </div>
+                        <div class="a-b">
+                            <label for="idade">Idade</label>
+                            <input type="number"><span>Anos</span>
+                        <div class="a-c">
+                            <label for="profissao">Profissão</label>
+                            <input type="text" name="profissao" id="profissao">
+                        </div>
+                        </div>
+                        <div class="a-d">
+                            <label for="pai">Pai</label>
+                            <input type="text" name="nome" id="pai">
+                        </div>
+                        <div class="a-e">
+                            <label for="mae">Mãe</label>
+                            <input type="text" name="nome" id="mae">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Informações de documentos -->
+                <h3 class="titulos">Documentos</h3>
+                <fieldset class="dados">
+                    <div class="documentos">
+                        <label for="rg">RG</label>
+                        <input type="number" name="numero" id="rg">
+
+                        <label for="orgao">Órgão Expedidor</label>
+                        <input type="text" name="nome" id="orgao">
+
+                        <label for="expedicao">Data de Expedição</label>
+                        <input type="date" name="data" id="expedicao">
+
+                        <div class="b-a">
+                            <label for="cpf">CPF</label>
+                            <input type="number" name="numero" id="cpf">
+                        </div>
+                    </div>
+                </fieldset>
+
+                <!-- Informações de residência -->
+                <h3 class="titulos">Endereço</h3>
+                <fieldset class="dados">
+                    <div class="enderecos">
+                        <label for="rua">Rua</label>
+                        <input type="text" name="nome" id="rua">
+
+                        <label for="numero">Nº</label>
+                        <input type="number" name="numero" id="num-rua">
+
+                        <label for="bairro">Bairro</label>
+                        <input type="text" name="nome" id="bairro">
+
+                        <div class="c-a">
+                            <label for="cidade">Cidade</label>
+                            <input type="text" name="nome" id="cidade">
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+            <button>Submeter</button>
+        </div>
+    </main>
+</body>
+</html>
